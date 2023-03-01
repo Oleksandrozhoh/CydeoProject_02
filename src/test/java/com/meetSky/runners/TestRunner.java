@@ -1,0 +1,15 @@
+package com.meetSky.runners;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        features = "src/test/resources/features",
+        glue = "com/meetSky/step_defs",
+        dryRun = false,
+        publish = true
+)
+public class TestRunner {
+}
